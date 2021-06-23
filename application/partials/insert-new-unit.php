@@ -1,5 +1,4 @@
 <?php
-require_once "../config.php";
 
 $sql_add_unit = "INSERT INTO $playUnits (act, unit, unitTitle, unitLocation, unitDescription, sceneBreak) VALUES (?, ?, ?, ?, ?, ?)";
  
@@ -54,6 +53,5 @@ $content = explode("\n", $_REQUEST["content"]);
 // Close connection
 mysqli_close($link);
 header("Location: ../edit.php");
-
 
 ?>

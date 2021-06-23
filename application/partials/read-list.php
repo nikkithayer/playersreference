@@ -1,5 +1,4 @@
 <?php
-require_once "config.php";
 
 // Attempt select query execution
 $sql_unit = "SELECT * FROM $playUnits";
@@ -21,7 +20,7 @@ if($result_unit = mysqli_query($link, $sql_unit)){
             if($result_line = mysqli_query($link, $sql_line)){
               if(mysqli_num_rows($result_line) > 0){
                 while($row_line = mysqli_fetch_array($result_line)){
-                  echo "<div aria-label='editable-text' class='".$row_line['lineType']."' id='line-".$row_line['lineId']."'>".$row_line['content'] . "</div>";
+                  echo "<div class='".$row_line['lineType']."' id='line-".$row_line['lineId']."'>".$row_line['content'] . "</div>";
                 }
                 mysqli_free_result($result_line);
               } else{

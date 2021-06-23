@@ -1,6 +1,6 @@
 <div id="add-unit">
   <a href="#" id="add-unit-close">Close</a>
-  <form action="partials/insert-new-unit.php" method="post">
+  <form action="../application/partials/insert-new-unit.php" method="post">
     <h1>Insert New Unit</h1>
     <p>
         <label for="act">Act:</label>

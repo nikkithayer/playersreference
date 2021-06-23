@@ -1,5 +1,4 @@
 <?php
-require_once "../config.php";
 
 $lineID = $_REQUEST['lineID'];
 $lineType = $_REQUEST['lineType'];

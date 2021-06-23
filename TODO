@@ -1,3 +1,4 @@
+require config works for reading but not for writing, broke the two writing actions in the refactor
 get array filter to actually work and remove empty lines when inputted
 data structure for essays and notes
 create dupe folder with separate config for R&J

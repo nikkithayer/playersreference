@@ -10,10 +10,10 @@
         <div id="text-change-alert">Watch this space</div>
       </header>
       <div class="container" id="text">
-        <?php @include "partials/edit-play-list.php" ?>
+        <?php @include "../application/partials/edit-play-list.php" ?>
       </div>
 
-      <?php @include "forms/add-new-unit.php" ?>
+      <?php @include "../application/forms/add-new-unit.php" ?>
 
    </body>
 </html>

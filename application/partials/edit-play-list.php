@@ -1,5 +1,4 @@
 <?php
-require_once "config.php";
 
 // Attempt select query execution
 $sql_unit = "SELECT * FROM $playUnits";
