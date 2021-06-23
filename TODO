@@ -1,0 +1,10 @@
+get array filter to actually work and remove empty lines when inputted
+data structure for essays and notes
+create dupe folder with separate config for R&J
+notes
+slightly more advanced templating in read mode to refine the javascript
+edit page has accordions for whole play
+if there's anything in the array for saving changes, pressing add unit asks you if you want to save changes
+edit cover information?
+write ability to edit line
+write ability to delete line

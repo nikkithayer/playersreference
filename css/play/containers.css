@@ -1,0 +1,13 @@
+/*CONTAINERS*/
+.container {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container.collapsible {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2FA9F2;
+  margin-bottom: 25px;
+}
+
+/*# sourceMappingURL=containers.css.map */

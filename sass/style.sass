@@ -1,0 +1,70 @@
+@use "colors"
+
+@import 'forms.css'
+
+/* BASE TEXT STYLES */
+
+body
+  font: 400 16px/1.6 "Poppins","Helvetica","Arial",sans-serif
+  color: colors.$page-font-color
+  background-color: colors.$page-bg-color
+  a
+    text-decoration: none
+    color: colors.$base-link-color
+  h1
+    font-size: 2.2em
+  h2
+    font-size: 1.2em
+  h3
+    font-size: 1.2em
+  p
+    margin: 10px 0
+  em
+    font-style: italic
+  strong
+    font-weight: 500
+  ul
+    margin-bottom: 20px
+    li
+      list-style: disc inside none
+      text-indent: -15px
+      li
+        padding-left: 15px
+  hr
+      border: none
+      border-bottom: 1px solid colors.$base-border-style
+      padding-top: 50px
+      margin-bottom: 50px
+  blockquote
+    font-size: 1.2em
+    opacity: 0.6
+    margin: 20px
+    font-style: italic
+  input
+    display: block
+    margin-bottom: 10px
+    &[type="checkbox"]
+      display: inline
+
+
+header
+  background-color: colors.$header-bg-color
+  padding: 10px
+  .container
+    text-align: right
+  a
+    color: white
+    margin: 20px
+    
+footer
+  font-size: 70%
+  opacity: 0.7
+  border-top: 1px solid colors.$neutral-border-style
+  padding-top: 10px
+  margin-top: 10px
+
+/* CONTAINER */
+.container
+    width: 80%
+    margin: 0 auto
+    overflow: hidden
