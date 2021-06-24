@@ -1,4 +1,3 @@
-require config works for reading but not for writing, broke the two writing actions in the refactor
 get array filter to actually work and remove empty lines when inputted
 data structure for essays and notes
 create dupe folder with separate config for R&J
@@ -9,3 +8,4 @@ if there's anything in the array for saving changes, pressing add unit asks you 
 edit cover information?
 write ability to edit line
 write ability to delete line
+are we gonna have any problems pasting in unicode and emojis and stuff

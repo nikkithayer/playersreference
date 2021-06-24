@@ -14,9 +14,5 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-global $playUnits;
-global $playContents;
-$playUnits = "play_units";
-$playContents = "play_contents";
 
 ?>

@@ -13,7 +13,6 @@ jQuery(function($) {
       var nextClass = textTypes.indexOf(currentClass)+1;
       el.removeClass();
       el.addClass(textTypes[nextClass]).attr("aria-label","edited");
-      console.log("hi",$('#text-change-alert'));
       $('#text-change-alert').text("Line "+el.attr("id").replace("line-","")+" type set to "+textTypes[nextClass]+".");
     }
 
@@ -26,7 +25,8 @@ jQuery(function($) {
           saveLineID.push(lineID);
           saveLineType.push(lineType);
       });
-      $.post( "partials/update-play-list.php", { 'lineID[]': saveLineID, 'lineType[]': saveLineType })
+
+      $.post( "../application/actions/update-play-list.php", { 'lineID[]': saveLineID, 'lineType[]': saveLineType, 'playUnits':playUnits, 'playContents':playContents, 'playName':playName})
         .done(function( data ) {
           alert( "Data Loaded: " + data );
       });          

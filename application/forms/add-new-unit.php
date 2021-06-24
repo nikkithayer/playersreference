@@ -1,6 +1,6 @@
 <div id="add-unit">
   <a href="#" id="add-unit-close">Close</a>
-  <form action="../application/partials/insert-new-unit.php" method="post">
+  <form action="../application/actions/insert-new-unit.php" method="post">
     <h1>Insert New Unit</h1>
     <p>
         <label for="act">Act:</label>
@@ -30,6 +30,11 @@
         <input type="checkbox" id="sceneBreak" name="sceneBreak" value="1">
         <label for="sceneBreak"> Does this unit end with a scene break?</label><br>
     </p>
+<?php
+    echo "<input type='hidden' name='playUnits' value='".$playUnits."'>";
+    echo "<input type='hidden' name='playContents' value='".$playContents."'>";
+    echo "<input type='hidden' name='playName' value='".$playName."'>";
+?>
     <input type="submit" value="Add New Unit" id="submit-unit">
   </form>
 </div>

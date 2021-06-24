@@ -1,4 +1,9 @@
 <?php
+require_once "../config.php";
+
+$playUnits = $_REQUEST['playUnits'];
+$playContents = $_REQUEST['playContents'];
+$playName = $_REQUEST['playName'];
 
 $sql_add_unit = "INSERT INTO $playUnits (act, unit, unitTitle, unitLocation, unitDescription, sceneBreak) VALUES (?, ?, ?, ?, ?, ?)";
  
@@ -52,6 +57,6 @@ $content = explode("\n", $_REQUEST["content"]);
 
 // Close connection
 mysqli_close($link);
-header("Location: ../edit.php");
+header("Location: ../../".$playName."/edit.php");
 
 ?>
