@@ -1,7 +1,7 @@
-<div id="add-unit">
+<div id="add-unit" class="add-modal">
   <a href="#" id="add-unit-close">Close</a>
   <form action="../application/actions/insert-new-unit.php" method="post">
-    <h1>Insert New Unit</h1>
+    <h2>Insert New Unit</h2>
     <p>
         <label for="act">Act:</label>
         <input type="text" name="act" id="act">

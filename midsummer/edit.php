@@ -9,9 +9,7 @@
         <button id="save-text-changes">Save Edits</button>
         <div id="text-change-alert">Watch this space</div>
       </header>
-      <div class="container" id="text">
         <?php include "../application/partials/edit-play-list.php" ?>
-      </div>
 
       <?php include "../application/forms/add-new-unit.php" ?>
 
