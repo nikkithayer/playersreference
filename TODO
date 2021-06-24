@@ -1,11 +1,29 @@
 get array filter to actually work and remove empty lines when inputted
 data structure for essays and notes
-create dupe folder with separate config for R&J
 notes
 slightly more advanced templating in read mode to refine the javascript
-edit page has accordions for whole play
 if there's anything in the array for saving changes, pressing add unit asks you if you want to save changes
 edit cover information?
 write ability to edit line
 write ability to delete line
 are we gonna have any problems pasting in unicode and emojis and stuff
+
+
+speech-header
+caption
+stage direction-entrance
+stage-direction
+stage direction-exit
+line-verse
+line-prose
+line-undefined 
+split-line-start
+split-line-end
+short-line
+line-couplet
+line-triplet
+line-quatrain
+line-cue
+line-Q1
+line-Q2 
+line-F

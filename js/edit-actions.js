@@ -34,20 +34,5 @@ jQuery(function($) {
       e.preventDefault();
     });
 
-    $("#add-unit").hide();
-    $("#show-add-unit").click(function(e){
-      $("#add-unit").show();
-    });
-
-    $("#add-unit-close").click(function(e){
-      $("#add-unit").hide();
-    });
-
   });
 });
-
-//when I move between elements
-//show what I did in some other div
-//when I press save
-//create an array of line numbers and text types
-//and post it as an array and send it over

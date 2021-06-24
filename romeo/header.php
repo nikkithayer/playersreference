@@ -1,6 +1,7 @@
 <? require_once "../application/config.php"; 
 $playUnits = "rj_play_units";
 $playContents = "rj_play_contents";
+$playContents = "rj_play_notes";
 $playName = "romeo";
 ?>
 
@@ -18,3 +19,5 @@ $playName = "romeo";
         var playName ="<?php echo $playName; ?>";
       </script>
       <script src="../js/edit-actions.js" type="text/javascript"></script>
+      <script src="../js/edit-view-actions.js" type="text/javascript"></script>
+      <script src="../js/add-unit-actions.js" type="text/javascript"></script>

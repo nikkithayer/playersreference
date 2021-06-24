@@ -30,4 +30,15 @@ header #text-change-alert {
   color: white;
 }
 
+.unit-accordion-control {
+  border-top: 1px solid #2FA9F2;
+  padding: 16px 0;
+  margin-top: 24px;
+  display: block;
+}
+
+.unit.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=edit.css.map */

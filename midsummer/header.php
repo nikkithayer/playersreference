@@ -1,6 +1,7 @@
 <? require_once "../application/config.php"; 
-$playUnits = "play_units";
-$playContents = "play_contents";
+$playUnits = "midsummer_play_units";
+$playContents = "midsummer_play_contents";
+$playNotes = "midsummer_play_notes";
 $playName = "midsummer";
 ?>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -17,3 +18,5 @@ $playName = "midsummer";
         var playName ="<?php echo $playName; ?>";
       </script>
       <script src="../js/edit-actions.js" type="text/javascript"></script>
+      <script src="../js/edit-view-actions.js" type="text/javascript"></script>
+      <script src="../js/add-unit-actions.js" type="text/javascript"></script>
