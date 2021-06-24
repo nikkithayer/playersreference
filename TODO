@@ -1,4 +1,5 @@
 notes
+change /partials to /views
 get array filter to actually work and remove empty lines when inputted
 data structure for essays and notes
 slightly more advanced templating in read mode to refine the javascript

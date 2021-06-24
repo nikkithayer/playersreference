@@ -1,7 +1,7 @@
 <? require_once "../application/config.php"; 
 $playUnits = "rj_play_units";
 $playContents = "rj_play_contents";
-$playContents = "rj_play_notes";
+$playNotes = "rj_play_notes";
 $playName = "romeo";
 ?>
 
