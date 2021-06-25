@@ -1,19 +1,22 @@
 jQuery(function($) {
   $(document).ready(function() {
 
-    $("[aria-label='editable-text']").click(function(e){
+    $(".line-type").click(function(e){
       cycleClass($(this));
       e.preventDefault();
     });
 
-    var textTypes = ["line","character","caption","split-line-end","stage-direction","stage-direction-exit"];
+    var textTypes = ["line","speech-header","caption","split-line-end","stage-direction","stage-direction-exit"];
 
     function cycleClass(el){
-      var currentClass = el.attr("class");
+      var elControl = el;
+      var elTarget = el.next()
+      var currentClass = elTarget.attr("class");
       var nextClass = textTypes.indexOf(currentClass)+1;
-      el.removeClass();
-      el.addClass(textTypes[nextClass]).attr("aria-label","edited");
-      $('#text-change-alert').text("Line "+el.attr("id").replace("line-","")+" type set to "+textTypes[nextClass]+".");
+      elTarget.removeClass();
+      elTarget.addClass(textTypes[nextClass]).attr("aria-label","edited");
+      $('#text-change-alert').text("Line "+elTarget.attr("id").replace("line-","")+" type set to "+textTypes[nextClass]+".");
+      $(elControl).text(textTypes[nextClass]);
     }
 
     $("#save-text-changes").click(function(e){
