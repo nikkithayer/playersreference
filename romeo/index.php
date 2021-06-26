@@ -16,7 +16,7 @@
       </div>
       <div class="container" id="text">
 
-        <?php include "../application/partials/read-list.php" ?>
+        <?php include "../application/views/read-list.php" ?>
 
       </div>
    </body>

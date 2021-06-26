@@ -5,7 +5,7 @@
    </head>
     <body>
       <?php include "../application/partials/edit-header.php" ?>
-      <?php include "../application/partials/edit-play-list.php" ?>
+      <?php include "../application/views/edit-play-list.php" ?>
 
       <?php include "../application/forms/add-new-unit.php" ?>
    </body>

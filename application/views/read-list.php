@@ -21,6 +21,24 @@ if($result_unit = mysqli_query($link, $sql_unit)){
               if(mysqli_num_rows($result_line) > 0){
                 while($row_line = mysqli_fetch_array($result_line)){
                   echo "<div class='".$row_line['lineType']."' id='line-".$row_line['lineId']."'>".$row_line['content'] . "</div>";
+
+                  $sql_note = "SELECT * FROM $playNotes WHERE lineID=$row_line[lineId]";
+                  if($result_note = mysqli_query($link, $sql_note)){
+                    if(mysqli_num_rows($result_note) > 0){
+                      while($row_note = mysqli_fetch_array($result_note)){
+                        echo $row_note['noteId'];
+                        echo $row_note['lineId'];
+                        echo $row_note['contentString'];
+                        echo $row_note['noteType'];
+                        echo $row_note['scansionAlt'];
+                        echo $row_note['noteContent'];
+                      }
+                      mysqli_free_result($result_note);
+                    }
+                  } else{
+                      echo "ERROR: Could not able to execute $sql_note. " . mysqli_error($link);
+                  }
+
                 }
                 mysqli_free_result($result_line);
               } else{
