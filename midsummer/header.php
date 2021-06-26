@@ -16,6 +16,7 @@ $playName = "midsummer";
         var playUnits ="<?php echo $playUnits; ?>";
         var playContents ="<?php echo $playContents; ?>";
         var playName ="<?php echo $playName; ?>";
+        var playNotes ="<?php echo $playNotes; ?>";
       </script>
       <script src="../js/edit-actions.js" type="text/javascript"></script>
       <script src="../js/edit-view-actions.js" type="text/javascript"></script>

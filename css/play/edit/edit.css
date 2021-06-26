@@ -22,14 +22,16 @@ header #text-change-alert {
   display: block;
 }
 #edit-text .unit-meta {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1/-1;
   border-bottom: 1px solid #2FA9F2;
   margin-bottom: 24px;
 }
+#edit-text .unit-meta p {
+  font-size: 16px;
+}
 #edit-text .unit {
   display: grid;
-  grid-template-columns: [line-type] 160px [play-text] 920px [add-note] 30px;
+  grid-template-columns: [line-type] 160px [play-text] 920px [add-note] 120px;
 }
 #edit-text .unit.hide {
   display: none;
@@ -43,6 +45,48 @@ header #text-change-alert {
 }
 #edit-text .unit .speech-header {
   margin-top: 0;
+}
+#edit-text .unit [aria-label=editable-text], #edit-text .unit [aria-label=edited] {
+  margin: 10px 0;
+}
+#edit-text .add-note {
+  grid-column: play-text;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+#edit-text .add-note.open {
+  display: block;
+}
+#edit-text .add-note form {
+  display: flex;
+  flex-wrap: wrap;
+}
+#edit-text .add-note form p {
+  padding-right: 20px;
+}
+#edit-text .add-note form p.flex2 {
+  flex-grow: 2;
+}
+#edit-text .add-note form p label {
+  display: block;
+}
+#edit-text .add-note form p textarea {
+  height: 100px;
+  width: 100%;
+}
+#edit-text .add-note form p input[type=submit] {
+  padding: 10px;
+  font-size: 14px;
+}
+#edit-text button.add-note-button {
+  grid-column: add-note;
+  background-color: #1A936F;
+  color: white;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
 }
 
 #add-unit {
@@ -72,11 +116,6 @@ header #text-change-alert {
   border: none;
   text-align: center;
   color: white;
-}
-
-#add-note p {
-  width: 20%;
-  display: inline-block;
 }
 
 /*# sourceMappingURL=edit.css.map */

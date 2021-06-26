@@ -20,9 +20,10 @@ if($result_unit = mysqli_query($link, $sql_unit)){
               if($result_line = mysqli_query($link, $sql_line)){
                 if(mysqli_num_rows($result_line) > 0){
                   while($row_line = mysqli_fetch_array($result_line)){
-                    echo "<div class='line-type' aria-label='line-".$row_line['lineId']."'>".$row_line['lineType']."</div>";
+                    echo "<div class='line-type'>".$row_line['lineType']."</div>";
                     echo "<div aria-label='editable-text' class='".$row_line['lineType']."' id='line-".$row_line['lineId']."'>".$row_line['content'] . "</div>";
-//                    include "../application/forms/add-new-note.php";
+                    include "../application/forms/add-new-note.php";
+                    echo "<button class='add-note-button' id='button-".$row_line['lineId']."'>Add Note</button>";
                   }
                   mysqli_free_result($result_line);
                 } else{
