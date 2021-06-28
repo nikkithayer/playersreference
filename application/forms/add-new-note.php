@@ -1,4 +1,4 @@
-<div class="add-note" id="note-<?php echo $row_line['lineId'];?>">
+<div class="add-note" id="note-<?php echo $row['lineId'];?>">
   <form action="../application/actions/insert-new-note.php" method="post">
     <p>
         <label for="noteType">Note Type:</label>
@@ -25,7 +25,7 @@
 <?php
     echo "<input type='hidden' name='playName' value='".$playName."'>";
     echo "<input type='hidden' name='playNotes' value='".$playNotes."'>";
-    echo "<input type='hidden' name='playLine' value='".$row_line['lineId']."'>";
+    echo "<input type='hidden' name='playLine' value='".$row['lineId']."'>";
 ?>
     <input type="submit" value="Add Line" id="submit-line">
   </form>

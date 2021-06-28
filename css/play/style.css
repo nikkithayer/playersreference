@@ -39,4 +39,16 @@ div#text.practice h4.actor {
   color: #AC812B;
 }
 
+div#var_table {
+  width: 100%;
+  text-align: center;
+}
+div#var_table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+div#var_table td.highlight {
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=style.css.map */

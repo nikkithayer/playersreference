@@ -5,7 +5,7 @@ $playNotes = $_REQUEST['playNotes'];
 $playName = $_REQUEST['playName'];
 
 
-$sql_add_note = "INSERT INTO $playNotes (lineId, contentString, noteType, scansionAlt, noteContent) VALUES (?, ?, ?, ?, ?)";
+$sql_add_note = "INSERT INTO $playNotes (lineIdRef, contentString, noteType, scansionAlt, noteContent) VALUES (?, ?, ?, ?, ?)";
  
 if($stmt_note = mysqli_prepare($link, $sql_add_note)){
     mysqli_stmt_bind_param($stmt_note, "issss", $lineId, $contentString, $noteType, $scansionAlt, $noteContent);
