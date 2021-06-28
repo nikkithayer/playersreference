@@ -7,7 +7,6 @@ if($result = mysqli_query($link, $sql)){
     $lastAct = "";
     $lastUnit = "";
     $lastLine = array();
-    $lineArray = array();
     while($row = mysqli_fetch_array($result)){
       if($row['act']!=$lastAct){
         echo "<h1>" . $row['act'] . "</h1>";
@@ -24,13 +23,14 @@ if($result = mysqli_query($link, $sql)){
         $lastUnit = $row['unitId'];
       }
 
-      if($row['lineId']!==$lastLine['lineId']){
-        echo "new line".$row['content']."<br>";
-      }else{
-        //add to array
-        echo "repeat line".$row['content']."<br>";
+      if($row['lineId']!==$lastLine[0]['lineId']){
+        printNote($lastLine);
+        $printString = "";
+        unset($lastLine);
+        //print array
+        //unset
       }
-      $lastLine = $row;
+      $lastLine[] = $row;
 
     }
     mysqli_free_result($result);
@@ -42,13 +42,24 @@ if($result = mysqli_query($link, $sql)){
 // Close connection
 mysqli_close($link);
 
+function printNote($line){
+  for($i = 0; $i < count($line); $i++) {
+    $line[$i]['pos'] = strpos($line[$i]['content'], $line[$i]['contentString']);
+    $line[$i]['len'] = strlen($line[$i]['contentString']);
+  }
+  $pos  = array_column($line, 'pos');
+  $len  = array_column($line, 'len');
 
+  array_multisort($pos, SORT_ASC, $len, SORT_DESC, $line);
 
-//take all notes and order by string position
-//if two notes have the same string position, start with the one with the longer string length
-// if the content string for a note exists
-// take the contents of the previous line and break them into an array
-// then wrap the contents of the matched string in the right tag
-// then convert the array back into a string
+  $printString = $line[0]['content'];
+  foreach($line as $print){
+    if(strpos($printString, $print['contentString'])!== false) {
+      $replaceString = "<span class='".$print['noteType']."'>".$print['contentString']."</span>";
+      $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
+    }
+  }
+  echo "<div class='".$line[0]['lineType']." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
 
+}
 ?>
