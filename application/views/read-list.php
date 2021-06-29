@@ -53,13 +53,29 @@ function printNote($line){
   array_multisort($pos, SORT_ASC, $len, SORT_DESC, $line);
 
   $printString = $line[0]['content'];
+  $noteContent = array();
   foreach($line as $print){
     if(strpos($printString, $print['contentString'])!== false) {
-      $replaceString = "<span class='".$print['noteType']."'>".$print['contentString']."</span>";
+      if($print['noteType']=="readerGloss"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-reader-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+      }
+      if($print['noteType']=="performerGloss"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-performer-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+      }
+      if($print['noteType']=="performerScansion"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-scansion='".$print['scansionAlt']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $noteContent[] = "<div class='open-note' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+      }
+      if($print['noteType']=="studentNote"){
+        $replaceString = "<span id='note-".$print['noteId']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $noteContent[] = "<div class='open-note' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+      }
       $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
     }
   }
   echo "<div class='".$line[0]['lineType']." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
-
+  foreach($noteContent as $note){
+    echo $note;
+  }
 }
 ?>
