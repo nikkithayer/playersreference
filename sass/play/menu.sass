@@ -1,0 +1,84 @@
+@use "../colors"
+
+/* SLIDING MENU */
+.container#menu
+  position: fixed
+  bottom: 0px
+  left: 20%
+  padding: 5px 0 0
+  width: 65%
+  ul
+    position: relative
+    left: 0%
+    background-image: linear-gradient(colors.$page-bg-fade 0%, colors.$page-bg-color 50%)
+    padding: 10px 0 0
+    margin-bottom: 0
+    li
+      display: inline-block
+      width: 23%
+      padding: 0
+      text-indent: 0
+      a
+        font-size: 18px
+        text-decoration: none
+        display: inline-block
+        width: 100%
+        box-sizing: border-box
+        padding: 7px 30px
+        text-align: center
+        color: colors.$link-text-color
+
+        &#reader
+          background-color: colors.$reader-background-color
+
+        &#student
+          background-color: colors.$student-background-color
+
+        &#performer
+          background-color: colors.$performer-background-color
+
+        &#practice
+          background-color: colors.$practice-background-color
+            
+      &.selected a
+        &#reader
+          background-color: colors.$reader-background-selected
+        &#student
+          background-color: colors.$student-background-selected
+        &#performer
+          background-color: colors.$performer-background-selected
+        &#practice
+          background-color: colors.$practice-background-selected
+                  
+  #toggle
+    background-color: colors.$toggle-color
+    display: inline-block
+    width: 40px
+    height: 40px
+    border-radius: 40px
+    position: absolute
+    right: 0
+    z-index: 1
+    bottom: 0
+
+    &.reader
+      background-color: colors.$reader-background-color
+      
+    &.student
+      background-color: colors.$student-background-color
+        
+    &.performer
+      background-color: colors.$performer-background-color
+      
+    &.practice
+      background-color: colors.$practice-background-color
+
+    &:before
+      content: ""
+      position: absolute
+      left: 11px
+      top: 12px
+      width: 1em
+      height: 3px
+      background: rgba(255,255,255,0.2)
+      box-shadow: 0 0.35em 0 0 colors.$toggle-border-color, 0 0.7em 0 0 colors.$toggle-border-color

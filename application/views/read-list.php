@@ -27,8 +27,6 @@ if($result = mysqli_query($link, $sql)){
         printNote($lastLine);
         $printString = "";
         unset($lastLine);
-        //print array
-        //unset
       }
       $lastLine[] = $row;
 

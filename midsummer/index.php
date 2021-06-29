@@ -17,6 +17,7 @@
       <div class="container" id="text">
 
         <?php include "../application/views/read-list.php" ?>
+        <?php include "../application/partials/menu.php" ?>
 
       </div>
    </body>
