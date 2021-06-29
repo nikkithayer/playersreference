@@ -4,6 +4,7 @@
 @import 'cover-page.css';
 @import 'line-styles.css';
 @import 'inline-notes.css';
+@import 'notes.css';
 @import 'edit/edit.css';
 @import 'edit/table-view.css';
 div#text, div.example-text {

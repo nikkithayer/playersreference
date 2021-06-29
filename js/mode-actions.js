@@ -19,13 +19,17 @@ jQuery(function($) {
         removeAllModes();
         if(mode === "reader"){
           $(".readerGloss").each(function(){
-            $(this).append("<span class='readerGlossContent'>"+$(this).attr("aria-reader-gloss")+"</span>");
+            var RGdistance = $(this).position().left;
+            var RGdistanceString = "style='transform:translate("+RGdistance+"px,-8px)'";
+            $(this).parent().closest("div").append("<span id="+$(this).attr("id")+"-gloss' "+RGdistanceString+" class='readerGlossContent'>"+$(this).attr("aria-reader-gloss")+"</span>");
           });
         }
 
         if(mode === "performer"){
           $(".performerGloss").each(function(){
-            $(this).append("<span class='performerGlossContent'>"+$(this).attr("aria-performer-gloss")+"</span>");
+            var PGdistance = $(this).position().left;
+            var PGdistanceString = "style='transform:translate("+PGdistance+"px,-8px)'";
+            $(this).parent().closest("div").append("<span id="+$(this).attr("id")+"-gloss' "+PGdistanceString+" class='performerGlossContent'>"+$(this).attr("aria-performer-gloss")+"</span>");
           });
 
           $(".performerScansion").each(function(){
@@ -44,6 +48,19 @@ jQuery(function($) {
       $(".performerScansion").each(function(){
         $(this).text($(this).attr("aria-original-text"));
       })
+      $(".noteOpen").removeClass().addClass("noteClosed");
+    }
+
+    $(".studentNote").click(function(e){
+      if(currentMode === "student"){
+        showNotes($(this));
+      }
+        e.preventDefault();
+    });
+
+    function showNotes(el){
+      noteID = "#open-"+el.attr("id");
+      $(noteID).removeClass().addClass("noteOpen");
     }
 
   });

@@ -15,10 +15,8 @@
          </div>
       </div>
       <div class="" id="text">
-
         <?php include "../application/views/read-list.php" ?>
-        <?php include "../application/partials/menu.php" ?>
-
       </div>
+      <?php include "../application/partials/menu.php" ?>
    </body>
 </html>

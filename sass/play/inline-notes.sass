@@ -9,22 +9,27 @@
   border: none
 
 #text.reader
-  .readerGlossContent
+  div
     position: relative
-    height: 30px
-    display: inline-block
+  .readerGlossContent
+    position: absolute
+    display: block
     color: colors.$glossary-inline-note-color
-    text-indent: 0
+    font-size: 14px
+    opacity: 0.8
   .readerGloss
     border-bottom: 1px dotted colors.$neutral-border-style
 
 #text.performer
-  .performerGlossContent
+  div
     position: relative
-    height: 30px
-    display: inline-block
+  .performerGlossContent
+    position: absolute
+
+    display: block
     color: colors.$rhetoric-inline-note-color
-    text-indent: 0
+    font-size: 14px
+    opacity: 0.8
   .performerGloss
     border-bottom: 1px dotted colors.$neutral-border-style
   .performerScansion

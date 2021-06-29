@@ -7,23 +7,29 @@
   border: none;
 }
 
-#text.reader .readerGlossContent {
+#text.reader div {
   position: relative;
-  height: 30px;
-  display: inline-block;
+}
+#text.reader .readerGlossContent {
+  position: absolute;
+  display: block;
   color: #DA4167;
-  text-indent: 0;
+  font-size: 14px;
+  opacity: 0.8;
 }
 #text.reader .readerGloss {
   border-bottom: 1px dotted #2FA9F2;
 }
 
-#text.performer .performerGlossContent {
+#text.performer div {
   position: relative;
-  height: 30px;
-  display: inline-block;
+}
+#text.performer .performerGlossContent {
+  position: absolute;
+  display: block;
   color: #1A936F;
-  text-indent: 0;
+  font-size: 14px;
+  opacity: 0.8;
 }
 #text.performer .performerGloss {
   border-bottom: 1px dotted #2FA9F2;

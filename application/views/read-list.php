@@ -62,11 +62,11 @@ function printNote($line){
       }
       if($print['noteType']=="performerScansion"){
         $replaceString = "<span id='note-".$print['noteId']."' aria-scansion='".$print['scansionAlt']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
-        $noteContent[] = "<div class='open-note' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+        $noteContent[] = "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
       }
       if($print['noteType']=="studentNote"){
         $replaceString = "<span id='note-".$print['noteId']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
-        $noteContent[] = "<div class='open-note' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+        $noteContent[] = "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
       }
       $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
     }
