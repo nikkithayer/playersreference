@@ -10,7 +10,7 @@
                <img src="midsummer/images/cover.jpg" alt="">
             </div>
             <h2>The Players' Reference Edition
-            <h1>A Midsummer Night's Dream</h1>
+            <h1>Romeo and Juliet</h1>
             <h2>by William Shakespeare</h2>
          </div>
       </div>
