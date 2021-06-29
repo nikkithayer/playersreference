@@ -22,3 +22,4 @@ $playName = "romeo";
       <script src="../js/edit-actions.js" type="text/javascript"></script>
       <script src="../js/edit-view-actions.js" type="text/javascript"></script>
       <script src="../js/add-unit-actions.js" type="text/javascript"></script>
+      <script src="../js/mode-actions.js" type="text/javascript"></script> 

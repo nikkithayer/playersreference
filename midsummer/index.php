@@ -14,7 +14,7 @@
             <h2>by William Shakespeare</h2>
          </div>
       </div>
-      <div class="container" id="text">
+      <div class="" id="text">
 
         <?php include "../application/views/read-list.php" ?>
         <?php include "../application/partials/menu.php" ?>

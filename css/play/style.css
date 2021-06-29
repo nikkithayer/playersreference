@@ -3,13 +3,17 @@
 @import 'containers.css';
 @import 'cover-page.css';
 @import 'line-styles.css';
+@import 'inline-notes.css';
 @import 'edit/edit.css';
+@import 'edit/table-view.css';
 div#text, div.example-text {
   font-size: 24px;
   line-height: 1.6;
   padding-bottom: 500px;
   margin: 0 auto;
   padding: 2% 10%;
+  width: 60%;
+  overflow: hidden;
 }
 div#text h1, div.example-text h1 {
   font-size: 1.4em;
@@ -34,22 +38,6 @@ div#text .unit-meta, div.example-text .unit-meta {
 
 form {
   font-size: 0.6em;
-}
-
-div#text.practice h4.actor {
-  color: #AC812B;
-}
-
-div#var_table {
-  width: 100%;
-  text-align: center;
-}
-div#var_table td {
-  border: 1px solid #ccc;
-  padding: 5px;
-}
-div#var_table td.highlight {
-  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */

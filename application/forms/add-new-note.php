@@ -5,7 +5,7 @@
         <select name="noteType" id="noteType">
           <option value="readerGloss">Reader - Gloss</option>
           <option value="studentNote">Student - Note</option>
-          <option value="performerScanson">Performer - Scansion</option>
+          <option value="performerScansion">Performer - Scansion</option>
           <option value="performerGloss">Performer - Gloss</option>
         </select>
     </p>

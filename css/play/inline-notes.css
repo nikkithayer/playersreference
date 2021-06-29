@@ -1,0 +1,39 @@
+/* GLOSSARY & RHETORIC */
+.readerGlossContent, .performerGlossContent {
+  display: none;
+}
+
+.readerGloss, .performerGloss {
+  border: none;
+}
+
+#text.reader .readerGlossContent {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  color: #DA4167;
+  text-indent: 0;
+}
+#text.reader .readerGloss {
+  border-bottom: 1px dotted #2FA9F2;
+}
+
+#text.performer .performerGlossContent {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  color: #1A936F;
+  text-indent: 0;
+}
+#text.performer .performerGloss {
+  border-bottom: 1px dotted #2FA9F2;
+}
+#text.performer .performerScansion {
+  color: #1A936F;
+}
+
+#text.student .studentNote {
+  color: #067BC2;
+}
+
+/*# sourceMappingURL=inline-notes.css.map */

@@ -1,0 +1,35 @@
+@use "../colors"
+
+/* GLOSSARY & RHETORIC */
+
+.readerGlossContent, .performerGlossContent
+  display: none
+
+.readerGloss, .performerGloss
+  border: none
+
+#text.reader
+  .readerGlossContent
+    position: relative
+    height: 30px
+    display: inline-block
+    color: colors.$glossary-inline-note-color
+    text-indent: 0
+  .readerGloss
+    border-bottom: 1px dotted colors.$neutral-border-style
+
+#text.performer
+  .performerGlossContent
+    position: relative
+    height: 30px
+    display: inline-block
+    color: colors.$rhetoric-inline-note-color
+    text-indent: 0
+  .performerGloss
+    border-bottom: 1px dotted colors.$neutral-border-style
+  .performerScansion
+    color: colors.$scansion-link-color
+
+#text.student
+  .studentNote
+    color: colors.$student-text-color

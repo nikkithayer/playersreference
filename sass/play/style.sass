@@ -5,7 +5,9 @@
 @import 'containers.css'
 @import 'cover-page.css'
 @import 'line-styles.css'
+@import 'inline-notes.css'
 @import 'edit/edit.css'
+@import 'edit/table-view.css'
 
 div#text, div.example-text
   font-size: 24px
@@ -13,6 +15,8 @@ div#text, div.example-text
   padding-bottom: 500px
   margin: 0 auto
   padding: 2% 10%
+  width: 60%
+  overflow: hidden
 
   h1
     font-size: 1.4em
@@ -32,18 +36,5 @@ div#text, div.example-text
     margin-bottom: 20px
     font-size: 0.8em
 
-
 form
   font-size: 0.6em
-
-div#text.practice h4.actor
-  color: colors.$practice-actor-name
-
-div#var_table
-  width: 100%
-  text-align: center
-  td
-    border: 1px solid #ccc
-    padding: 5px
-    &.highlight
-      background-color: yellow
