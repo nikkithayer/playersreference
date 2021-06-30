@@ -5,7 +5,7 @@ $sql = "SELECT * FROM $playUnits LEFT JOIN $playContents ON $playUnits.unitId = 
 if($result = mysqli_query($link, $sql)){
   if(mysqli_num_rows($result) > 0){
     $lastUnit = "";
-    $lastLine = "";
+    $lastLine = array();
     echo "<div id='edit-text'>";
     while($row = mysqli_fetch_array($result)){
 
@@ -22,13 +22,12 @@ if($result = mysqli_query($link, $sql)){
       $lastUnit = $row['unitId'];
       }
 
-      if($row['lineId']!==$lastLine){
-        echo "<div class='line-type'>".$row['lineType']."</div>";
-        echo "<div aria-label='editable-text' class='".$row['lineType']."' id='line-".$row['lineId']."'>".$row['content'] . "</div>";
-        include "../application/forms/add-new-note.php";
-        echo "<button class='add-note-button' id='button-".$row['lineId']."'>Add Note</button>";
-        $lastLine = $row['lineId'];
+      if($row['lineId']!==$lastLine[0]['lineId']){
+        printNote($lastLine);
+        $printString = "";
+        unset($lastLine);
       }
+      $lastLine[] = $row;
 
     }
     mysqli_free_result($result);
@@ -39,5 +38,54 @@ if($result = mysqli_query($link, $sql)){
 
 // Close connection
 mysqli_close($link);
+
+function printNote($line){
+  for($i = 0; $i < count($line); $i++) {
+    $line[$i]['pos'] = strpos($line[$i]['content'], $line[$i]['contentString']);
+    $line[$i]['len'] = strlen($line[$i]['contentString']);
+  }
+  $pos  = array_column($line, 'pos');
+  $len  = array_column($line, 'len');
+
+  array_multisort($pos, SORT_ASC, $len, SORT_DESC, $line);
+
+  $printString = $line[0]['content'];
+  $noteContent = array();
+  foreach($line as $print){
+    if(strpos($printString, $print['contentString'])!== false) {
+      if($print['noteType']=="readerGloss"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-reader-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+      }
+      if($print['noteType']=="performerGloss"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-performer-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+      }
+      if($print['noteType']=="performerScansion"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-scansion='".$print['scansionAlt']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $noteContent[] = "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+      }
+      if($print['noteType']=="studentNote"){
+        $replaceString = "<span id='note-".$print['noteId']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $noteContent[] = "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+      }
+      $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
+    }
+  }
+  echo "<div class='line-type'>".$line[0]['lineType']."</div>";
+  echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
+  include "../application/forms/add-new-note.php";
+  echo "<button class='add-note-button' id='button-".$line['lineId']."'>Add Note</button>";
+  foreach($noteContent as $note){
+    echo $note;
+  }
+}
+
+
+/*
+        echo "<div class='line-type'>".$line[0]['lineType']."</div>";
+        echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
+        include "../application/forms/add-new-note.php";
+        echo "<button class='add-note-button' id='button-".$line['lineId']."'>Add Note</button>";
+
+*/
 
 ?>

@@ -88,6 +88,28 @@ header #text-change-alert {
   border: none;
   border-radius: 6px;
 }
+#edit-text .readerGloss:before, #edit-text .studentNote:before, #edit-text .performerGloss:before, #edit-text .performerScansion:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: -2px;
+  margin-right: 2px;
+}
+#edit-text .readerGloss:before {
+  background-color: #DA4167;
+}
+#edit-text .studentNote:before {
+  background-color: #067BC2;
+}
+#edit-text .performerGloss:before {
+  background-color: #1A936F;
+}
+#edit-text .performerScansion:before {
+  background-color: #1A936F;
+}
 
 #add-unit {
   background-color: white;

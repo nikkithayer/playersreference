@@ -76,6 +76,24 @@ header
     border: none
     border-radius: 6px
 
+  .readerGloss:before, .studentNote:before, .performerGloss:before, .performerScansion:before
+    content: ''
+    width: 18px
+    height: 18px
+    border-radius: 10px
+    position: relative
+    display: inline-block
+    margin-bottom: -2px
+    margin-right: 2px
+
+  .readerGloss:before
+    background-color: colors.$reader-text-color
+  .studentNote:before
+    background-color: colors.$student-text-color
+  .performerGloss:before
+    background-color: colors.$performer-text-color
+  .performerScansion:before
+    background-color: colors.$performer-text-color
 
 #add-unit
   background-color: colors.$add-form-background-color
