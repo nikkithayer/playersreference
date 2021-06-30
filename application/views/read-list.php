@@ -1,5 +1,5 @@
 <?php
-
+echo "<div id='text'>";
 // Attempt select query execution
 $sql = "SELECT * FROM $playUnits LEFT JOIN $playContents ON $playUnits.unitId = $playContents.unitId LEFT JOIN $playNotes ON $playContents.lineId = $playNotes.lineIdRef ORDER BY $playContents.lineId ASC";
 if($result = mysqli_query($link, $sql)){
@@ -39,6 +39,9 @@ if($result = mysqli_query($link, $sql)){
 
 // Close connection
 mysqli_close($link);
+
+echo "</div>";
+
 
 function printNote($line){
   for($i = 0; $i < count($line); $i++) {
