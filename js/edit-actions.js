@@ -15,7 +15,7 @@ jQuery(function($) {
 
     $("button.add-note-button").click(function(e){
       var lineID = parseInt(($(this).attr("id")).replace("button-",""));
-      $("#note-"+lineID).addClass("open");
+      $("#addNote-"+lineID).addClass("open");
       e.preventDefault();
     });
 

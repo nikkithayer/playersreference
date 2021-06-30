@@ -9,37 +9,34 @@ jQuery(function($) {
     });
 
     $(".readerGloss").on('click',function(e){
-      console.log("readergloss click");
       removeAllModes();
       $(this).parent().closest("div").append("<span id="+$(this).attr("id")+"-gloss' class='readerGlossContent'>"+$(this).attr("aria-reader-gloss")+"</span>");
       e.preventDefault();
     });
 
     $(".performerGloss").on('click',function(e){
-      console.log("performergloss click");
       removeAllModes();
       $(this).parent().closest("div").append("<span id="+$(this).attr("id")+"-gloss' class='performerGlossContent'>"+$(this).attr("aria-performer-gloss")+"</span>");
       e.preventDefault();
     });
 
     $(".studentNote").on('click',function(e){
-      console.log("studentnote click");
       removeAllModes();
+      var noteID = "#open-"+$(this).attr("id");
+      $(noteID).removeClass("noteClosed").addClass("noteOpen");
       e.preventDefault();
     });
 
     $(".performerScansion").on('click',function(e){
-      console.log("performerscansion click");
       removeAllModes();
+      $(this).parent().closest("div").append("<span id="+$(this).attr("id")+"-scansion class='performerScansionContent'>"+$(this).attr("aria-scansion")+"</span>");
       e.preventDefault();
     });
 
     function removeAllModes(){
       $(".readerGlossContent").remove()
       $(".performerGlossContent").remove();
-      $(".performerScansion").each(function(){
-        $(this).text($(this).attr("aria-original-text"));
-      })
+      $(".performerScansionContent").remove();
       $(".noteOpen").removeClass().addClass("noteClosed");
     }
 

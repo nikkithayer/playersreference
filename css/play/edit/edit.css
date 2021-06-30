@@ -110,6 +110,9 @@ header #text-change-alert {
 #edit-text .performerScansion:before {
   background-color: #1A936F;
 }
+#edit-text .readerGlossContent, #edit-text .performerGlossContent, #edit-text .performerScansionContent, #edit-text .noteOpen {
+  display: block;
+}
 
 #add-unit {
   background-color: white;

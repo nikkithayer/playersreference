@@ -73,7 +73,7 @@ function printNote($line){
   echo "<div class='line-type'>".$line[0]['lineType']."</div>";
   echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
   include "../application/forms/add-new-note.php";
-  echo "<button class='add-note-button' id='button-".$line['lineId']."'>Add Note</button>";
+  echo "<button class='add-note-button' id='button-".$line[0]['lineId']."'>Add Note</button>";
   foreach($noteContent as $note){
     echo $note;
   }
