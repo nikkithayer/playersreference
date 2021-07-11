@@ -14,6 +14,12 @@ if($result = mysqli_query($link, $sql)){
       }
 
       if($row['unitId']!==$lastUnit){
+        if($lastUnit!==""){ 
+          printNote($lastLine, $playNotes, $playName);
+          $printString = "";
+          unset($lastLine);
+          $lastLine[] = $row;
+        }
         echo "<div class='unit-meta'>";
         echo "<h2>" . $row['unit'] . " " . $row['unitTitle'] . "</h2>";
         echo "<h3>" . $row['unitLocation'] . "</h3>";

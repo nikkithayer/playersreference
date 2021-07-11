@@ -11,6 +11,10 @@ if($result = mysqli_query($link, $sql)){
 
       if($row['unitId']!==$lastUnit){
         if($lastUnit!==""){ 
+          printNote($lastLine, $playNotes, $playName);
+          $printString = "";
+          unset($lastLine);
+          $lastLine[] = $row;
           echo "</div>";
         }
         echo "<a class='unit-accordion-control' href='unit-".$row['unitId']."'>".$row['act'].", ".$row['unit'].", ".$row['unitTitle']."</a>";
@@ -33,7 +37,7 @@ if($result = mysqli_query($link, $sql)){
     mysqli_free_result($result);
   }
 } else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    echo "ERROR: Could not execute $sql. " . mysqli_error($link);
 }
 
 // Close connection
