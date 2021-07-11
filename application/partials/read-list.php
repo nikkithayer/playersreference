@@ -1,29 +1,30 @@
 <?php
-
+echo "<div id='text'>";
 // Attempt select query execution
 $sql = "SELECT * FROM $playUnits LEFT JOIN $playContents ON $playUnits.unitId = $playContents.unitId LEFT JOIN $playNotes ON $playContents.lineId = $playNotes.lineIdRef ORDER BY $playContents.lineId ASC";
 if($result = mysqli_query($link, $sql)){
   if(mysqli_num_rows($result) > 0){
+    $lastAct = "";
     $lastUnit = "";
     $lastLine = array();
-    echo "<div id='edit-text'>";
     while($row = mysqli_fetch_array($result)){
+      if($row['act']!=$lastAct){
+        echo "<h1>" . $row['act'] . "</h1>";
+        $lastAct = $row['act'];
+      }
 
       if($row['unitId']!==$lastUnit){
-        if($lastUnit!==""){ 
-          echo "</div>";
-        }
-        echo "<a class='unit-accordion-control' href='unit-".$row['unitId']."'>".$row['act'].", ".$row['unit'].", ".$row['unitTitle']."</a>";
-        echo "<div id='unit-".$row['unitId']."' class='unit'>";
         echo "<div class='unit-meta'>";
-            echo "<p>" . $row['unitLocation'] . "</p>";
-            echo "<p>" . $row['unitDescription'] . "</p>";
-            echo "</div>";
-      $lastUnit = $row['unitId'];
+        echo "<h2>" . $row['unit'] . " " . $row['unitTitle'] . "</h2>";
+        echo "<h3>" . $row['unitLocation'] . "</h3>";
+        echo "<h3>" . $row['unitDescription'] . "</h3>";
+ //       echo $row['sceneBreak'];
+        echo "</div>";
+        $lastUnit = $row['unitId'];
       }
 
       if($row['lineId']!==$lastLine[0]['lineId']){
-        printNote($lastLine, $playNotes, $playName);
+        printNote($lastLine);
         $printString = "";
         unset($lastLine);
       }
@@ -39,7 +40,10 @@ if($result = mysqli_query($link, $sql)){
 // Close connection
 mysqli_close($link);
 
-function printNote($line, $playNotes, $playName){
+echo "</div>";
+
+
+function printNote($line){
   for($i = 0; $i < count($line); $i++) {
     $line[$i]['pos'] = strpos($line[$i]['content'], $line[$i]['contentString']);
     $line[$i]['len'] = strlen($line[$i]['contentString']);
@@ -70,13 +74,9 @@ function printNote($line, $playNotes, $playName){
       $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
     }
   }
-  echo "<div class='line-type'>".$line[0]['lineType']."</div>";
-  echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
-  include "../application/forms/add-new-note.php";
-  echo "<button class='add-note-button' id='button-".$line[0]['lineId']."'>Add Note</button>";
+  echo "<div class='".$line[0]['lineType']." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
   foreach($noteContent as $note){
     echo $note;
   }
 }
-
 ?>

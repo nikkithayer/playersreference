@@ -23,7 +23,7 @@ if($result = mysqli_query($link, $sql)){
       }
 
       if($row['lineId']!==$lastLine[0]['lineId']){
-        printNote($lastLine, $playNotes, $playName);
+        printNote($lastLine);
         $printString = "";
         unset($lastLine);
       }
@@ -39,7 +39,7 @@ if($result = mysqli_query($link, $sql)){
 // Close connection
 mysqli_close($link);
 
-function printNote($line, $playNotes, $playName){
+function printNote($line){
   for($i = 0; $i < count($line); $i++) {
     $line[$i]['pos'] = strpos($line[$i]['content'], $line[$i]['contentString']);
     $line[$i]['len'] = strlen($line[$i]['contentString']);
@@ -78,5 +78,14 @@ function printNote($line, $playNotes, $playName){
     echo $note;
   }
 }
+
+
+/*
+        echo "<div class='line-type'>".$line[0]['lineType']."</div>";
+        echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
+        include "../application/forms/add-new-note.php";
+        echo "<button class='add-note-button' id='button-".$line['lineId']."'>Add Note</button>";
+
+*/
 
 ?>
