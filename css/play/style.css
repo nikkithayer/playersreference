@@ -36,6 +36,18 @@ div#text .unit-meta, div.example-text .unit-meta {
   margin-bottom: 20px;
   font-size: 0.8em;
 }
+div#text.reader div.student, div#text.reader div.performer, div#text.reader div.practice, div.example-text.reader div.student, div.example-text.reader div.performer, div.example-text.reader div.practice {
+  display: none;
+}
+div#text.student div.reader, div#text.student div.performer, div#text.student div.practice, div.example-text.student div.reader, div.example-text.student div.performer, div.example-text.student div.practice {
+  display: none;
+}
+div#text.performer div.reader, div#text.performer div.student, div#text.performer div.practice, div.example-text.performer div.reader, div.example-text.performer div.student, div.example-text.performer div.practice {
+  display: none;
+}
+div#text.practice div.reader, div#text.practice div.student, div#text.practice div.performer, div.example-text.practice div.reader, div.example-text.practice div.student, div.example-text.practice div.performer {
+  display: none;
+}
 
 form {
   font-size: 0.6em;

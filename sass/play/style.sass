@@ -37,5 +37,18 @@ div#text, div.example-text
     margin-bottom: 20px
     font-size: 0.8em
 
+  &.reader
+    div.student, div.performer, div.practice
+      display: none
+  &.student
+    div.reader, div.performer, div.practice
+      display: none
+  &.performer
+    div.reader, div.student, div.practice
+      display: none
+  &.practice
+    div.reader, div.student, div.performer
+      display: none
+
 form
   font-size: 0.6em

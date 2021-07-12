@@ -20,17 +20,14 @@ if($result = mysqli_query($link, $sql)){
           unset($lastLine);
           $lastLine[] = $row;
         }
-        echo "<div class='unit-meta'>";
-        echo "<h2>" . $row['unit'] . " " . $row['unitTitle'] . "</h2>";
-        echo "<h3>" . $row['unitLocation'] . "</h3>";
-        echo "<h3>" . $row['unitDescription'] . "</h3>";
- //       echo $row['sceneBreak'];
-        echo "</div>";
+        printUnit($row);
         $lastUnit = $row['unitId'];
       }
 
       if($row['lineId']!==$lastLine[0]['lineId']){
-        printNote($lastLine);
+        if($lastLine[0]['lineId']!==null){
+          printNote($lastLine);
+        }
         $printString = "";
         unset($lastLine);
       }
@@ -55,31 +52,75 @@ function printNote($line){
   $len  = array_column($line, 'len');
 
   array_multisort($pos, SORT_ASC, $len, SORT_DESC, $line);
+//if there's no notes on the line, just print it
+  printStudentMode($line, "student");
+  printReaderMode($line, "reader");
+  printPerformerMode($line, "performer");
+  printPracticeMode($line, "practice");
+  printNotes($line);
+}
 
+function printUnit($row){
+  echo "<div class='unit-meta'>";
+  echo "<h2>" . $row['unit'] . " " . $row['unitTitle'] . "</h2>";
+  echo "<h3>" . $row['unitLocation'] . "</h3>";
+  echo "<h3>" . $row['unitDescription'] . "</h3>";
+//       echo $row['sceneBreak'];
+  echo "</div>";
+
+}
+
+function printNotes($line){
+  foreach($line as $print){
+    if($print['noteContent']!==""){
+      echo "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
+    }
+  }
+}
+
+function printStudentMode($line, $modeName){
   $printString = $line[0]['content'];
-  $noteContent = array();
+  foreach($line as $print){
+    if(strpos($printString, $print['contentString'])!== false) {
+      if($print['noteType']=="studentNote"){
+        $replaceString = "<span id='note-".$print['noteId']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
+      }
+    }
+  }
+  echo "<div class='".$line[0]['lineType']." ".$modeName." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
+}
+function printReaderMode($line, $modeName){
+  $printString = $line[0]['content'];
   foreach($line as $print){
     if(strpos($printString, $print['contentString'])!== false) {
       if($print['noteType']=="readerGloss"){
         $replaceString = "<span id='note-".$print['noteId']."' aria-reader-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
+      }
+    }
+  }
+  echo "<div class='".$line[0]['lineType']." ".$modeName." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
+}
+function printPerformerMode($line, $modeName){
+  $printString = $line[0]['content'];
+  foreach($line as $print){
+    if(strpos($printString, $print['contentString'])!== false) {
+      if($print['noteType']=="performerScansion"){
+        $replaceString = "<span id='note-".$print['noteId']."' aria-scansion='".$print['scansionAlt']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
       }
       if($print['noteType']=="performerGloss"){
         $replaceString = "<span id='note-".$print['noteId']."' aria-performer-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
+        $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
       }
-      if($print['noteType']=="performerScansion"){
-        $replaceString = "<span id='note-".$print['noteId']."' aria-scansion='".$print['scansionAlt']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
-        $noteContent[] = "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
-      }
-      if($print['noteType']=="studentNote"){
-        $replaceString = "<span id='note-".$print['noteId']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
-        $noteContent[] = "<div class='noteClosed' id='open-note-".$print['noteId']."'>".$print['noteContent']."</div>";
-      }
-      $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
     }
   }
-  echo "<div class='".$line[0]['lineType']." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
-  foreach($noteContent as $note){
-    echo $note;
-  }
+  echo "<div class='".$line[0]['lineType']." ".$modeName." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
 }
-?>
+function printPracticeMode($line, $modeName){
+  $printString = $line[0]['content'];
+  echo "<div class='".$line[0]['lineType']." ".$modeName." ".$line[0]['lineTags']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
+}
+
+  ?>

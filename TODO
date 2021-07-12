@@ -1,3 +1,5 @@
+refactor add unit and delete line into join queries
+
 scansion note not showing up
 
 figure out scene break
@@ -10,7 +12,7 @@ slightly more advanced templating in read mode to refine the javascript
 if there's anything in the array for saving changes, pressing add unit asks you if you want to save changes
 edit cover information?
 write ability to edit line
-write ability to delete line
+write ability to delete note
 are we gonna have any problems pasting in unicode and emojis and stuff
 
 

@@ -27,7 +27,9 @@ if($result = mysqli_query($link, $sql)){
       }
 
       if($row['lineId']!==$lastLine[0]['lineId']){
-        printNote($lastLine, $playNotes, $playName);
+        if($lastLine[0]['lineId']!==null){
+          printNote($lastLine, $playNotes, $playName);
+        }
 
         $printString = "";
         unset($lastLine);
