@@ -31,7 +31,7 @@ header #text-change-alert {
 }
 #edit-text .unit {
   display: grid;
-  grid-template-columns: [line-type] 160px [play-text] 920px [add-note] 120px;
+  grid-template-columns: [line-type] 160px [play-text] 880px [edit-actions] 160px;
 }
 #edit-text .unit.hide {
   display: none;
@@ -80,11 +80,16 @@ header #text-change-alert {
   padding: 10px;
   font-size: 14px;
 }
-#edit-text button.add-note-button {
-  grid-column: add-note;
+#edit-text .edit-actions {
+  grid-column: edit-actions;
+}
+#edit-text .edit-actions button {
+  margin: 0 2px;
+}
+#edit-text .edit-actions button.add-note-button {
   background-color: #1A936F;
   color: white;
-  height: 32px;
+  height: 24px;
   border: none;
   border-radius: 6px;
 }

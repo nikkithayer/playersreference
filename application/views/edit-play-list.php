@@ -28,6 +28,7 @@ if($result = mysqli_query($link, $sql)){
 
       if($row['lineId']!==$lastLine[0]['lineId']){
         printNote($lastLine, $playNotes, $playName);
+
         $printString = "";
         unset($lastLine);
       }
@@ -77,8 +78,11 @@ function printNote($line, $playNotes, $playName){
   echo "<div class='line-type'>".$line[0]['lineType']."</div>";
   echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
   include "../application/forms/add-new-note.php";
-  echo "<button class='add-note-button' id='button-".$line[0]['lineId']."'>Add Note</button>";
-  foreach($noteContent as $note){
+  echo "<div class='edit-actions'>";
+    echo "<button class='add-note-button' id='button-".$line[0]['lineId']."'>Add Note</button>";
+    echo "<button class='delete-line-button' id='button-delete-".$line[0]['lineId']."'>Delete Line</button>";
+  echo "</div>";
+    foreach($noteContent as $note){
     echo $note;
   }
 }

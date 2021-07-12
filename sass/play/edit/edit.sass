@@ -30,7 +30,7 @@ header
 
   .unit
     display: grid
-    grid-template-columns: [line-type] 160px [play-text] 920px [add-note] 120px
+    grid-template-columns: [line-type] 160px [play-text] 880px [edit-actions] 160px
     &.hide
       display: none
     .line-type
@@ -67,14 +67,17 @@ header
         input[type='submit']
           padding: 10px
           font-size: 14px
-    
-  button.add-note-button
-    grid-column: add-note
-    background-color: colors.$add-note-button-bgcolor
-    color: white
-    height: 32px
-    border: none
-    border-radius: 6px
+
+  .edit-actions
+    grid-column: edit-actions
+    button
+      margin: 0 2px
+    button.add-note-button
+      background-color: colors.$add-note-button-bgcolor
+      color: white
+      height: 24px
+      border: none
+      border-radius: 6px
 
   .readerGloss:before, .studentNote:before, .performerGloss:before, .performerScansion:before
     content: ''

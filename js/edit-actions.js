@@ -19,6 +19,11 @@ jQuery(function($) {
       e.preventDefault();
     });
 
+    $("button.delete-line-button").click(function(e){
+      deleteLine($(this));
+      e.preventDefault;
+    });
+
     function saveChanges(){
       var saveLineID = [];
       var saveLineType = []
@@ -35,6 +40,17 @@ jQuery(function($) {
       });                
     }
 
+    function deleteLine(el){
+      var lineID = parseInt((el.attr("id")).replace("button-delete-",""));
+      var deleteCheck = confirm("Delete line "+lineID+"? This will erase all corresponding notes, too.");
+      if(deleteCheck===true){
+        $.post( "../application/actions/delete-line.php", { 'lineID': lineID, 'playContents':playContents, 'playNotes':playNotes})
+          .done(function( data ) {
+            alert( "Deleted: " + data );
+        });                
+      }
+    }
+    
     function cycleClass(el){
       var elControl = el;
       var elTarget = el.next()
