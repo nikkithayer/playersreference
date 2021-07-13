@@ -4,7 +4,7 @@
   <div class="container">
     <a href="#">About</a>
     <a href="midsummer">A Midsummer Night's Dream</a>
-    <a href="#">Romeo and Juliet</a>
+    <a href="romeo">Romeo and Juliet</a>
   </div>
 </header>
 <div class="container">
