@@ -77,7 +77,9 @@ function printNote($line, $playNotes, $playName){
       $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
     }
   }
-  echo "<div class='line-type'>".$line[0]['lineType']."</div>";
+  echo "<div class='line-type'>".$line[0]['lineType']."<br>";
+  populateLineClassification($line[0]['lineId']);
+  echo "</div>";
   echo "<div aria-label='editable-text' class='".$line[0]['lineType']."' id='line-".$line[0]['lineId']."'>".$printString . "</div>";
   include "../application/forms/add-new-note.php";
   echo "<div class='edit-actions'>";
@@ -87,6 +89,17 @@ function printNote($line, $playNotes, $playName){
     foreach($noteContent as $note){
     echo $note;
   }
+}
+
+function populateLineClassification($id){
+$lineTypes = ["speech-header","caption","stage direction-entrance","stage-direction","stage direction-exit","line-verse","line-prose","line-undefined","split-line-start","split-line-end","short-line","line-couplet","line-triplet","line-quatrain","line-cue","line-Q1","line-Q2","line-F"];
+foreach($lineTypes as $checkbox){
+  echo "<div>";
+  echo "<input type='checkbox' id='".$checkbox."' name='".$checkbox."'>";
+  echo "<label for='".$checkbox."'>".$checkbox."</label>";
+  echo "</div>";
+}
+
 }
 
 ?>

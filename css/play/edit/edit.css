@@ -10,9 +10,8 @@ header #text-change-alert {
 }
 
 #edit-text {
-  width: 90%;
-  max-width: 1200px;
-  margin: 80px auto;
+  width: 98%;
+  margin: 80px 2%;
   font-size: 20px;
 }
 #edit-text .unit-accordion-control {
@@ -31,7 +30,7 @@ header #text-change-alert {
 }
 #edit-text .unit {
   display: grid;
-  grid-template-columns: [line-type] 160px [play-text] 880px [edit-actions] 160px;
+  grid-template-columns: [line-type] 1fr [play-text] 6fr [edit-actions] 1fr;
 }
 #edit-text .unit.hide {
   display: none;
