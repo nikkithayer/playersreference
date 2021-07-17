@@ -34,3 +34,21 @@ line-cue
 line-Q1
 line-Q2 
 line-F
+
+
+  <input type="checkbox" id="speech-header" name="speech-header">
+  <label for="speech-header">speech-header</label>
+  <input type="checkbox" id="caption" name="caption">
+  <label for="caption">caption</label>
+  <input type="checkbox" id="stage direction-entrance" name="stage direction-entrance">
+  <label for="stage direction-entrance">speech-header</label>
+  <input type="checkbox" id="speech-header" name="speech-header">
+  <label for="speech-header">speech-header</label>
+  <input type="checkbox" id="speech-header" name="speech-header">
+  <label for="speech-header">speech-header</label>
+  <input type="checkbox" id="speech-header" name="speech-header">
+  <label for="speech-header">speech-header</label>
+  <input type="checkbox" id="speech-header" name="speech-header">
+  <label for="speech-header">speech-header</label>
+  <input type="checkbox" id="speech-header" name="speech-header">
+  <label for="speech-header">speech-header</label>
