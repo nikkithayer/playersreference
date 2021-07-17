@@ -65,6 +65,30 @@ footer
 
 /* CONTAINER */
 .container
-    width: 80%
-    margin: 0 auto
-    overflow: hidden
+  width: 80%
+  margin: 0 auto
+  overflow: hidden
+
+.container-grid
+  width: 80%
+  margin: 0 auto
+  overflow: hidden
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  column-gap: 20px
+  row-gap: 20px
+  overflow: visible
+
+  h1
+    grid-column: 1/-1
+
+  .card
+    display: block
+    width: 100%
+    padding: 20px
+    box-sizing: border-box
+    background-color: white
+    box-shadow: 0px 5px 10px #ccc
+    &:hover
+      box-shadow: 0px 2px 5px #aaa
+      transition: 0.25s ease-in
