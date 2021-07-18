@@ -4,10 +4,10 @@
    <?php include 'header.php'; ?>
    </head>
     <body>
-      <div id="cover-page">
+      <div id="cover-page" class="midsummer">
          <div class="container">
             <div class="cover">
-               <img src="midsummer/images/cover.jpg" alt="">
+               <img src="../../images/cover.jpg" alt="">
             </div>
             <h2>The Players' Reference Edition
             <h1>A Midsummer Night's Dream</h1>
