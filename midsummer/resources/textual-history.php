@@ -10,7 +10,7 @@
     when Mere’s cited it. The thematically related play <em>Romeo and Juliet</em>, which
       also appears on Mere’s list, dates to roughly the same time.</p>
       <div class="img-wrapper">
-        <img src="midsummer/images/Meres.jpg" alt="Palladis Tamia" />
+        <img src="../../images/Meres.jpg" alt="Palladis Tamia" />
         <p>The text of <em>Wit's Treasury</em> that first recorded <em>MND</em></p>
         <p>public domain</p>
     </div>
@@ -22,7 +22,7 @@
     the right to print the play was reserved in this period), by Thomas Fisher, a 
     first-time publisher who would only produce three more titles in an unsuccessful career.</p>
     <div class="img-wrapper">
-      <img src="midsummer/images/StatReg.jpg" alt="Stationers' Register" />
+      <img src="../../images/StatReg.jpg" alt="Stationers' Register" />
         <p>The text of this entry says: 8. octobris</p>
         <p>Tho. ffyssher Entred for his copie under the</p>
         <p>handes of mr Rodes and the</p>
@@ -118,7 +118,7 @@
 <p>The stemmatic diagram below shows the relationships of the inferred documents prior to
     printing, and the genetic line of the three early witnesses.</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/MNDStemma.jpeg" alt="Stemma" />
+    <img src="../../images/MNDStemma.jpeg" alt="Stemma" />
     <p>A Textual Stemma for Midsummer</p>
     <p>Kurt Daw, owner/creator</p>
 </div>
@@ -144,7 +144,7 @@
     have any idea of the popularity of the play, but it is easily conceivable that in 1600
     it was no longer in the active repertoire of the Lord Chamberlain’s Men.</p>
   <div class="img-wrapper">
-    <img src="midsummer/images/Q1.jpg" alt="First Quarto Title Page" />
+    <img src="../../images/Q1.jpg" alt="First Quarto Title Page" />
     <p>The title page of the first quarto</p>
     <p>public domain</p>
 </div>
@@ -173,7 +173,7 @@
     This is one of a group of somewhat mysterious reprints, the so-called “Pavier” Quartos,
     that were printed at about the same time, of which many are similarly falsely dated.</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/Q2.jpg" alt="Second Quarto Title Page" />
+    <img src="../../images/Q2.jpg" alt="Second Quarto Title Page" />
     <p>The title page of the second quarto</p>
     <p>public domain</p>
 </div>
@@ -194,7 +194,7 @@
     use an anachronistic term) the King’s Men’s promptbook. Stage directions are much
     improved, as are a small number of readings.</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/F1.jpg" alt="First Folio Title Page" />
+    <img src="../../images/F1.jpg" alt="First Folio Title Page" />
     <p>The first page of the play from the first folio</p>
     <p>public domain</p>
 </div>

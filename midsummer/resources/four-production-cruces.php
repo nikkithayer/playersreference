@@ -108,40 +108,40 @@
     were conceived as "superhuman" skills, which were represented on stage by circus and
     acrobatic equivalents.</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/Brookcolor.jpg" alt="Brook's brightly colored production" />
+    <img src="../../images/Brookcolor.jpg" alt="Brook's brightly colored production" />
     <p> Peter Brook's "Circus" <em>Midsummer</em>
     </p>
     <p>Fair use of publicity materials originally released by the producing company</p>
 </div>
 <p>Since Brook, the fairies have been cast as figures of Elizabethan folklore,</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/GlobeOberon.jpg" alt="Folkloric Fairies at the Globe" />
+    <img src="../../images/GlobeOberon.jpg" alt="Folkloric Fairies at the Globe" />
     <p> John Light as Oberon and Matthew Tennyson as Puck, at the Globe. Directed by
         Dominic Dromgoole.</p>
     <p>Fair use of publicity materials originally released by the producing company</p>
 </div>
 <p>as menacing leather punks,</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/Utahmidsummer-nights-dream-2.jpg" alt="Punks" />
+    <img src="../../images/Utahmidsummer-nights-dream-2.jpg" alt="Punks" />
     <p> Old Globe Theatre, San Diego, California</p>
     <p>Fair use of publicity materials originally released by the producing company</p>
 </div>
 <p>as giant puppets,</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/HandspringOT.jpg" alt="Handspring Puppets" />
+    <img src="../../images/HandspringOT.jpg" alt="Handspring Puppets" />
     <p> David Ricardo-Pearce as Oberon and Saskia Portway as Tytania, Photo: Simon
         Annand</p>
     <p>Fair use of publicity materials originally released by the producing company</p>
 </div>
 <p> as exotic deities,</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/DC stiltsmidsummer1.jpg" alt="DC puppets" />
+    <img src="../../images/DC stiltsmidsummer1.jpg" alt="DC puppets" />
     <p> Daniel Breaker/Puck Mark H. Dold/Oberon </p>
     <p>Fair use of publicity materials originally released by the producing company</p>
 </div>
 <p> as erotic dream doubles,</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/BlackvsWhiteOberon.jpg" alt="Dream Doubles" />
+    <img src="../../images/BlackvsWhiteOberon.jpg" alt="Dream Doubles" />
     <p> Elijah Alexander/Oberon and Kymberly Mellen/Tytania at the Utah Shakespeare
         Festival </p>
     <p>Fair use of publicity materials originally released by the producing company</p>
@@ -149,7 +149,7 @@
 <p> and as comic superheroes.</p>
 <div class="img-wrapper">
     <img
-        src="midsummer/images/Jonathan-Broadbent-as-Oberon-in-A-Midsummer-Nights-Dream-Lyric-Hammersmith-Photo-by-Keith-Pattison.jpg"
+        src="../../images/Jonathan-Broadbent-as-Oberon-in-A-Midsummer-Nights-Dream-Lyric-Hammersmith-Photo-by-Keith-Pattison.jpg"
         alt="Superhero" />
     <p> Jonathan Broadbent/Oberon Lyric-Hammersmith, London </p>
     <p>Fair use of publicity materials originally released by the producing company</p>
@@ -198,7 +198,7 @@
     to abstract fictions to be accepted without question, that creates the theatrical
     pleasure. Suspending our disbelief is half the fun.</p>
     <div class="img-wrapper">
-    <img src="midsummer/images/OberonenchantsTytania.jpg" alt="Production photo" />
+    <img src="../../images/OberonenchantsTytania.jpg" alt="Production photo" />
     <p>Oberon enchants Tytania in a Pennsylvania Shakespeare Festival production</p>
     <p>Fair use of publicity materials originally released by the producing company</p>
 </div>

@@ -43,7 +43,7 @@
         aristocratic home of the period or one of the Inns of Court, such as the one
         pictured below, or even outdoors as it often is today.</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/MiddleTemple2.jpg" alt="Middle Temple Hall" />
+        <img src="../../images/MiddleTemple2.jpg" alt="Middle Temple Hall" />
         <p> A performance at Middle Temple Hall in London </p>
         <p>Used by permission of the Folger Shakespeare Library under a Creative Commons
             Attribution-ShareAlike 4.0 International License.</p>
@@ -57,7 +57,7 @@
         courtyards of inns of provincial towns where temporary stages were erected for
         touring performances:</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/TempStage.JPG"
+        <img src="../../images/TempStage.JPG"
             alt="A temporary stage set up in the courtyard of an inn" />
         <p>Used by permission of the Folger Shakespeare Library under a Creative Commons
             Attribution-ShareAlike 4.0 International License.</p>
@@ -71,7 +71,7 @@
         that the play was printed (thus making it available for performance by rival
         companies) in 1600 suggests that it was not a part of the active repertoire.</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/GlobePerf.jpg"
+        <img src="../../images/GlobePerf.jpg"
             alt="A temporary stage erected in a London amphitheatre" />
         <p> A performance at the Globe </p>
         <p>Used by permission of the Folger Shakespeare Library under a Creative Commons
@@ -93,7 +93,7 @@
         <em>Midsummer</em> was not a particular success upon the occasion of this
         revival.</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/HodgesBlackfriars.jpg" alt="The Blackfriars Theatre" />
+        <img src="../../images/HodgesBlackfriars.jpg" alt="The Blackfriars Theatre" />
         <p> A reconstruction of the Blackfriars Theatre. </p>
         <p>Used by permission of the Folger Shakespeare Library under a Creative Commons
             Attribution-ShareAlike 4.0 International License.</p>
@@ -115,7 +115,7 @@
         the backdrops of Greek temples and other classical vistas often became more
         important than the foreground action.</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/TreeMND.jpg" alt="A spectacular production" />
+        <img src="../../images/TreeMND.jpg" alt="A spectacular production" />
         <p>Herbert Beerbohm Tree's production of 1900, with dozens of children playing
             fairies, real grass, and even live rabbits in the forest.</p>
         <p>public domain</p>
@@ -129,7 +129,7 @@
         not performance scripts. The play was only being staged in variety show adaptations
         that had, at best, tenuous connections to Shakespeare’s original.)</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/GBCast.jpg" alt="Granville-Barker's production" />
+        <img src="../../images/GBCast.jpg" alt="Granville-Barker's production" />
         <p>Harley Granville-Barker's staging of PYRAMUS AND THISBE, which compared with
             Tree's production (above) is more in keeping with early modern stage
             practice.</p>
@@ -163,7 +163,7 @@
         children in it, it was not a production to which to bring them. It was also a
         production that set new standards for clear, fresh verse speaking.</p>
     <div class="img-wrapper">
-        <img src="midsummer/images/BrookDreamPhoto.jpg" alt="Publicity Picture" />
+        <img src="../../images/BrookDreamPhoto.jpg" alt="Publicity Picture" />
         <p>An RSC publicity photo of Brook's production.</p>
         <p>Photo: Wikimedia, fair use.</p>
     </div>

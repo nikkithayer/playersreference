@@ -59,7 +59,7 @@
         copies, which likely have been misinterpreted by editors with little or
         no theatrical experience.</p>
         <div class="img-wrapper">
-    <img src="midsummer/images/Platt.jpg"
+    <img src="../../images/Platt.jpg"
         alt="Platt of Seven Deadly Sins" />
     <p>A backstage "platt," or plot, used to indicte the running order of the show.</p>
 </div>
@@ -269,7 +269,7 @@
         adherence to copy-text editing practices since it was not (in their opinion) the
         original form.</p>
         <div class="img-wrapper">
-    <img src="midsummer/images/Folioquarto.2.jpg"
+    <img src="../../images/Folioquarto.2.jpg"
         alt="A Comparison of the sizes of the Folio and Quarto" />
     <p> A 14" tall Folio, next to a Quarto, an Octavo and 2 rare smaller sizes. </p>
 </div>
@@ -475,7 +475,7 @@
         virtually no punctuation at all.) Grammatical rules for consistent practice did not
         yet exist, so it is relatively arbitrary. </p>
         <div class="img-wrapper">
-    <img src="midsummer/images/HandD.jpg"
+    <img src="../../images/HandD.jpg"
         alt="The Hand D addition to SIR THOMAS MORE" />
     <p>A brief addition to <em>Sir Thomas More</em> controversially argued to be in Shakespeare's hand.</p>
 </div>

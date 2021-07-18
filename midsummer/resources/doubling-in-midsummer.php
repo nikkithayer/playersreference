@@ -47,7 +47,7 @@
     "goblins," not female children. This doubling, too, has now become rather common in
     twenty-first century productions.</p>
 <div class="img-wrapper">
-    <img src="midsummer/images/InigoJonesFaires.jpg" alt="Adult men as fairies" />
+    <img src="../../images/InigoJonesFaires.jpg" alt="Adult men as fairies" />
     <p> Designs by Inigo Jones for fairies in his masque, <em>Oberon</em>
     </p>
 </div>

@@ -1,7 +1,7 @@
 <?php include '_header.php'; ?>
 <h1> List of Characters </h1>
 <div class="img-wrapper" style="display:none">
-    <img src="midsummer/images/Dramatis%20Personae.jpg" alt="Dramatis Personae" />
+    <img src="../../images/Dramatis%20Personae.jpg" alt="Dramatis Personae" />
     <p> Illustration by Heath Robinson, 1919 </p>
 </div>
 <div class="unit-meta">
@@ -20,7 +20,7 @@
         <p> 212 lines (188 verse, 24 prose) distributed across 48 speeches, 1799 total
             words, or about 10% of the play </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Archibald.jpg" alt="Theseus slaying the Minotaur" />
+            <img src="../../images/Archibald.jpg" alt="Theseus slaying the Minotaur" />
             <p> The Archibald Fountain, Sidney </p>
         </div>
         <p>Theseus was a classical hero who conquered the Amazons, captured Hippolyta,
@@ -39,7 +39,7 @@
             ancient Greece, which as the birthplace of philosophy would have
             associations with order and rationality. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/WoundedAmazon.jpg"
+            <img src="../../images/WoundedAmazon.jpg"
                 alt="The Wounded Amazon, copy after Phidias. Photo by Jean-Pol Grandmont " />
             <p> The Wounded Amazon, copy after Phidias </p>
         </div>
@@ -78,7 +78,7 @@
         <p> Lysander is a diminutive form of Alexander, which as a classical name
             immediately invokes Alexander the Great, probably as humorous overstatement. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Alexander.jpg" alt="Alexander the Great" />
+            <img src="../../images/Alexander.jpg" alt="Alexander the Great" />
             <p> Alexander the Great </p>
         </div>
     </li>
@@ -96,7 +96,7 @@
             character. Expectations of danger may also be suggested here, although
             exaggerated for comic effect. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Demeter.jpg" alt="Demeter" />
+            <img src="../../images/Demeter.jpg" alt="Demeter" />
             <p> Demeter, Goddess of Marriage </p>
         </div>
     </li>
@@ -112,7 +112,7 @@
             War when the Trojan prince, Paris, kidnapped her from her husband, the Greek
             general Menalaus. Her name is sometimes shortened to "Helen" in this play. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Helene_Paris_David.jpg" alt="Helen of Troy" />
+            <img src="../../images/Helene_Paris_David.jpg" alt="Helen of Troy" />
             <p>
                 <em> Helen in Troy </em> by Jacque-Louis David </p>
         </div>
@@ -140,7 +140,7 @@
         <p> This name for the King of the Fairies is drawn from Spenser's <em> Faerie
                 Queene</em>, the great allegorical tale of the British Renaissance. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Oberon.jpg" alt="Oberon" />
+            <img src="../../images/Oberon.jpg" alt="Oberon" />
             <p> Costume design by Inigo Jones, 1609 </p>
         </div>
     </li>
@@ -155,7 +155,7 @@
             powerful supernatural force, if not a goddess herself. There is no authority
             for the common contemporary spelling or pronunciation of this name. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Titania.jpg" alt="Tytania with Bottom" />
+            <img src="../../images/Titania.jpg" alt="Tytania with Bottom" />
             <p>
                 <em> Tytania with Bottom</em>, by Henry Fuseli</p>
         </div>
@@ -169,7 +169,7 @@
             is what, not who, he is. A puck was a kind of common spirit, or goblin, in
             English folklore. </p>
         <div class="img-wrapper">
-            <img src="midsummer/images/Puck_1629.JPG" alt="Engraving of Puck" />
+            <img src="../../images/Puck_1629.JPG" alt="Engraving of Puck" />
             <p>
                 <em> Robin Goodfellow</em>, woodcut, 1629 </p>
         </div>
@@ -209,7 +209,7 @@
 </ul>
 <h3> The Artisans of Athens, sometimes called the "Mechanicals" </h3>
 <div class="img-wrapper">
-    <img src="midsummer/images/Rustics.jpg" alt="The Rude Mechanicals" />
+    <img src="../../images/Rustics.jpg" alt="The Rude Mechanicals" />
     <p> The "Rude Mechanicals," in an illustration by Heath Robinson, 1919 </p>
 </div>
 <ul>

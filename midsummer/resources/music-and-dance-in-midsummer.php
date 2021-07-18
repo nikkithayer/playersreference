@@ -16,7 +16,7 @@
     through the hubbub in the auditorium, at least temporarily quieting the buzz, and
     focusing the audience’s attention.</p>
     <div class="img-wrapper">
-    <img src="midsummer/images/Swan.jpg" alt="drawing of a theatre" />
+    <img src="../../images/Swan.jpg" alt="drawing of a theatre" />
     <p>A 1595 sketch of a performance in progress at the Swan, clearly showing a trumpet player in the gallery. (top right)</p>
     <p>The De Witt drawing of the Swan Theatre, the only contemporary drawing of a playhouse interior.
     </p>
@@ -53,7 +53,7 @@
     play for example, where music was probably used but it is not specified in the stage
     directions of the quartos or the folio.</p>
     <div class="img-wrapper">
-    <img src="midsummer/images/Consort.jpg" alt="period print" />
+    <img src="../../images/Consort.jpg" alt="period print" />
     <p> An instrumental consort of the type that might supply incidental music for a play</p>
     <p>Johann Theodor de Bry, detail from Society Couples Dancing
     </p>
@@ -165,7 +165,7 @@
     from the contrast between what we hear from the braying of the transformed Bottom
     and what the enchanted Tytania perceives as an “angelic” voice.</p>
     <div class="img-wrapper">
-    <img src="midsummer/images/balladsinger.jpg" alt="Inigo Jones watercolor" />
+    <img src="../../images/balladsinger.jpg" alt="Inigo Jones watercolor" />
     <p> Inigo Jones' rendering of a ballad singer
     </p>
     <p>Faithful two-dimensional copy of a work in the public domain</p>
@@ -221,7 +221,7 @@
         href="https://www.youtube.com/watch?v=MvlXCe3S52Q" target="_blank">
         <strong><em>"Sleep, Wayward Thoughts"</em></strong></a></p>
 <div class="img-wrapper">
-    <img src="midsummer/images/Pavane2.jpg" alt="period print" />
+    <img src="../../images/Pavane2.jpg" alt="period print" />
     <p> Johann Theodor de Bry, detail from Society Couples Dancing
     </p>
     <p>Faithful two-dimensional copy of a work in the public domain</p>
@@ -253,7 +253,7 @@
     clapping and stomping along to the insistent rhythm, but if music is desired almost
     any lively folk or popular dance will serve in this location.</p>
     <div class="img-wrapper">
-    <img src="midsummer/images/Bergomask2.jpg" alt="Period print of dance" />
+    <img src="../../images/Bergomask2.jpg" alt="Period print of dance" />
     <p> Sebald Beham's "Sept. and Oct." from The Peasant's Feast, or the 12 Months
     </p>
     <p>Faithful two-dimensional copy of a work in the public domain</p>
