@@ -7,7 +7,7 @@
 
 <div class="play-splash" id="romeo-play-splash">
   <img src="../images/Romeo_and_juliet_brown.jpg" />
-  <a href="romeo/play.php" class="card">Romeo and Juliet</a>
+  <a href="play.php" class="card">Romeo and Juliet</a>
 </div>
 
 <div class="container-grid">

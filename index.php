@@ -2,7 +2,7 @@
 <body>
 <header>
   <div class="container">
-    <a href="#">About</a>
+    <a href="romeo">About</a>
     <a href="midsummer">A Midsummer Night's Dream</a>
     <a href="romeo">Romeo and Juliet</a>
   </div>
