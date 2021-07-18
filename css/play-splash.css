@@ -1,0 +1,41 @@
+.play-splash {
+  background-color: #64B6AC;
+  width: 80%;
+  margin: 0 auto;
+  height: 450px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px #ccc;
+  display: grid;
+  grid-template-columns: [cover-image] 50% [cover-link] 50%;
+}
+.play-splash:hover {
+  box-shadow: 0px 2px 5px #aaa;
+  transition: 0.25s ease-in;
+}
+.play-splash#midsummer-play-splash {
+  background-color: #64B6AC;
+}
+.play-splash#romeo-play-splash {
+  background-color: #4B296B;
+}
+.play-splash#romeo-play-splash img {
+  margin-top: -100px;
+}
+.play-splash img {
+  object-fit: contain;
+  grid-column: cover-image;
+}
+.play-splash a {
+  grid-column: cover-link;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+}
+.play-splash a:hover {
+  border-bottom: 1px solid white;
+  transition: 0.25s ease-in;
+}
+
+/*# sourceMappingURL=play-splash.css.map */

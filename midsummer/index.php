@@ -5,8 +5,10 @@
    </head>
     <body>
 
+<div class="play-splash" id="midsummer-play-splash">
+  <img src="../images/cover.jpg" />
   <a href="midsummer/play.php" class="card">A Midsummer Night's Dream</a>
-
+</div>
 <div class="container-grid">
   <h1>User's Guide</h1>
   <a href="midsummer/resources/quick-start-guide.php" class="card">Quick Start Guide</a>
