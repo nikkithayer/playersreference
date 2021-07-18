@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h2> Performer Mode, with Scansion and Rhetoric </h2>
 <p><span class="performer-text">Emerald green "Performer" mode</span> contains scansion notes.</p>
 <h3> SCANSION </h3>
@@ -42,3 +43,4 @@
     generally include an indication of current performance practice.</p>
 <p> For more information about the principles used in this edition, see the essay, 
 "Practical Scansion" in the end matter of this edition. </p>
+<?php include '_footer.php'; ?>

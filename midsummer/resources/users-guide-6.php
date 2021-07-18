@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h2> Practice Mode </h2>
 <p> The final mode in this edition is the <span class="practice-text">olive green "Practice" mode</span>, 
     designed to help with memorizing everything from small chunks to complete roles. </p>
@@ -17,3 +18,4 @@
 <p>For those with detailed interest in such matters, a much fuller and more technical 
 discussion of the editorial principles used to create this edition can be found 
 in the essay "Editorial Problems and Principles" Resources section following the play.</p>
+<?php include '_footer.php'; ?>

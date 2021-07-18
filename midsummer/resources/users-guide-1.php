@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1> User's Guide </h1>
 <h2> SCRIPT SECTIONS AND THEIR HEADINGS </h2>
 <p> When you open this edition to a numbered unit, you will see a section heading that
@@ -65,3 +66,4 @@
 <h4> Plot Summary </h4>
 <p> Finally, a brief editorial <em> précis </em> of the plot appears, as well as
     indications of other important aspects of the scene where applicable. </p>
+<?php include '_footer.php'; ?>

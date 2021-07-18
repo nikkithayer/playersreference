@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1>Annotated Resources</h1>
 <p>Note: All titles are clickable links</p>
 <h2> Facsimiles and transcriptions of 17th Century Editions</h2>
@@ -38,3 +39,4 @@
   
   <a href="http://shakespeare.berkeley.edu/" target="_blank"> <strong><em>Shakespeare's Staging</em></strong></a>
   <p>University of California, Berkeley's immensely informative site about the staging of Shakespeare's plays throughout history</p>
+  <?php include '_footer.php'; ?>

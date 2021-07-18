@@ -1,3 +1,5 @@
+<?php include '_header.php'; ?>
+
 <h1>A Brief Performance History</h1>
     
     <p><em>A Midsummer Night’s Dream</em> is the most produced and performed play in the
@@ -178,3 +180,6 @@
 Live) essentially exchanged the roles of Oberon and Tytania by reassigning all but the
 first few of their lines. He became Bottom's gay paramour because of a magical plot
 conducted by her with Puck.</p>
+
+
+<?php include '_footer.php'; ?>

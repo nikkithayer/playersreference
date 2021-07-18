@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1>Selected Bibliography</h1> 
     <p>Abraham, F. Murray. <em>Actors on Shakespeare: A Midsummer Night’s Dream.</em> Faber and
         Faber, 2005. </p>
@@ -233,3 +234,4 @@
     <p>Worthen, W.B. <em>Shakespeare and the Authority of Performance.</em> Cambridge UP, 1997.</p>
     <p>---. <em>Shakespeare Performance Studies</em>. Cambridge UP, 2014.</p>
     <p>Wright, George Thaddeus. <em>Shakespeare's Metrical Art</em>. U of California, 1988. </p>
+    <?php include '_footer.php'; ?>

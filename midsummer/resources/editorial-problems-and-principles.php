@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1> Editorial Problems and Principles </h1>
     <h2>The major editorial principles of this edition:</h2>
     <ul>
@@ -671,3 +672,4 @@
             <em>works</em>. For a more specific discussion of the application of this
         argument to Shakespeare, see W.B. Worthen’s <em>Shakespeare Performance
         Studies</em>.</p>
+        <?php include '_footer.php'; ?>

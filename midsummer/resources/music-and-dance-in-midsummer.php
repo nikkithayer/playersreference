@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1>Music and Dance in <em>A Midsummer Night’s Dream</em></h1>
 <h2>The Performing Arts of Elizabethan England.</h2>
 <p>Both music and dance were important to country life in early modern England. Folk
@@ -475,3 +476,4 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This recording of period music for Shakespeare’s plays, also made widely available
     by the publisher on streaming services, includes “The Woosel Cock” and “You Spotted
     Snakes,” along with a short version of “Kemp’s Jig.”)</p>
+<?php include '_footer.php'; ?>

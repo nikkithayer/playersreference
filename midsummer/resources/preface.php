@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1> Preface: A New Kind of Edition </h1>
 <blockquote> "Plays exist for one purpose only: to be brought to life... A performance
     should bring the plays, with the audience, to the highest level of life within
@@ -126,3 +127,4 @@
     modern audience members are, justifiably, offended. How such challenges are
     addressed in modern performance becomes the focus of the note in this edition,
     rather than the usual historic contextualizing of these as mere rhetorical figures. </p>
+    <?php include '_footer.php'; ?>

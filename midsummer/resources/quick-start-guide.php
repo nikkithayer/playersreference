@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1> Quick Start Guide </h1>
 <p> The <em> Experiential Shakespeare </em> operates in four basic modes. Upon opening
     the app a colored dot appears in the bottom right corner of the screen, which can be
@@ -39,3 +40,4 @@
     possible. Clicking again will close the menu. </p>
 <p> To begin using the app, simply scroll down the page until the text begins. To read
     the prefatory materials first, click on the button below instead. </p>
+    <?php include '_footer.php'; ?>

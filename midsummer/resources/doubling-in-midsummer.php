@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1> Doubling in <em>Midsummer</em>
 </h1>
 <p><em>A Midsummer Night’s Dream</em> is a play that seems designed for extensive
@@ -124,3 +125,4 @@
     custom generally, the original practice. Modern performance history tells us that
     the play is now more successful and popular when performed in this manner, whether
     or not it was originally played this way.</p>
+    <?php include '_footer.php'; ?>

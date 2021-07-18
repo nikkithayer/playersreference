@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1>Four Production Cruces</h1>
 
 <p>Traditional editions often dwell on textual cruces. (Academic readers will
@@ -303,3 +304,4 @@
     many productions. Oberon is often treated as a narrator, while Tytania is seen
     performing the rites that constitute the blessing. Occasionally, some of his lines
     are simply reassigned to her to make the ending more equal.</p>
+    <?php include '_footer.php'; ?>

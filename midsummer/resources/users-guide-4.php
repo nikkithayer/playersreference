@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h2> Student Mode, with Notes, Mythology, and Textual Variants </h2>
 <p> <span class="student-text">Blue "Student" mode</span> is designed to assist a user who has advanced beyond determining the
     basic meaning of the words, and is placing them in context. In this mode, some words
@@ -46,3 +47,4 @@
         a series or publisher name, like <em>The Oxford Shakespeare</em>. </li>
 
 </ul>
+<?php include '_footer.php'; ?>

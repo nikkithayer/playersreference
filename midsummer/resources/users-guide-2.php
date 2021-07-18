@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h2>The Edited Script </h2>
 
 <p>After the section header you will find the edited text of the unit in the form of a
@@ -15,3 +16,4 @@
 (as well as the editorial essays) appear in this san serif font.</p>
 <p>The appearance of the section depends on the mode in which it is being viewed.
     Discussions of the four modes appear in the sections that follow.</p>
+<?php include '_footer.php'; ?>

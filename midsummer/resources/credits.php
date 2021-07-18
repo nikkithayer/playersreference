@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1>Credits</h1>
 
 <p>Edited by Kurt Daw</p>
@@ -5,3 +6,4 @@
 <p>Conceptual Advice by David Daw</p>
 <p>Copy Editing by Hillary Hight</p>
 <p>Research and Scansion Assistance by Alexandra Mays and Liam Blaney</p>
+<?php include '_footer.php'; ?>

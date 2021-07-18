@@ -1,5 +1,5 @@
-
-    <h1>Practical Scansion</h1>
+<?php include '_header.php'; ?>
+<h1>Practical Scansion</h1>
 <p>Scansion—the beating out of the rhythm of Shakespeare's verse—is a fundamental skill for
     the performer. To the degree that it has a practical application in spoken delivery of
     the lines it is relatively simple to learn to do. <em>Midsummer </em>is a nearly ideal
@@ -510,3 +510,4 @@
 <p>Great verse speaking, on the level of a Judi Dench or Ian McKellen, takes a lifetime to
     master, but simple rules can help anyone get started correctly and carry them a
     surprisingly long way. </p>
+    <?php include '_footer.php'; ?>

@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1>Textual History</h1>
     <p><em>A Midsummer Night’s Dream </em> is first recorded in a list of notable 
     English poets and their plays complied by Shakespeare’s contemporary, Francis Meres, 
@@ -226,3 +227,4 @@
     best, it creates an opportunity for implying such a resolution to their conflict 
     sub-textually because there is no onstage moment that does anything more than 
     the part did when it was Philostrate's.</p>
+    <?php include '_footer.php'; ?>

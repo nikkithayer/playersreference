@@ -1,3 +1,4 @@
+<?php include '_header.php'; ?>
 <h1> List of Characters </h1>
 <div class="img-wrapper" style="display:none">
     <img src="midsummer/images/Dramatis%20Personae.jpg" alt="Dramatis Personae" />
@@ -261,3 +262,4 @@
         <p> Starveling is a proverbially thin tailor. </p>
     </li>
 </ul>
+<?php include '_footer.php'; ?>
