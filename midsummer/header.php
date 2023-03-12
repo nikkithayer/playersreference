@@ -1,4 +1,4 @@
-<? require_once "../application/config.php"; 
+<?php require_once "../application/config.php"; 
 $playUnits = "midsummer_play_units";
 $playContents = "midsummer_play_contents";
 $playNotes = "midsummer_play_notes";
