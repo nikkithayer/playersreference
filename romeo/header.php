@@ -1,11 +1,11 @@
-<? require_once "../application/config.php"; 
+<?php require_once "../application/config.php"; 
 $playUnits = "rj_play_units";
 $playContents = "rj_play_contents";
 $playNotes = "rj_play_notes";
 $playName = "romeo";
 ?>
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="text/html" charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Romeo and Juliet</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
