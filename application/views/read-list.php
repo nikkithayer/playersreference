@@ -23,7 +23,7 @@ if($result = mysqli_query($link, $sql)){
         printUnit($row);
         $lastUnit = $row['unitId'];
       }
-
+if($row['lineId']&&$lastLine[0]['lineId']){
       if($row['lineId']!==$lastLine[0]['lineId']){
         if($lastLine[0]['lineId']!==null){
           printNote($lastLine);
@@ -31,8 +31,8 @@ if($result = mysqli_query($link, $sql)){
         $printString = "";
         unset($lastLine);
       }
+}
       $lastLine[] = $row;
-
     }
     mysqli_free_result($result);
   }
@@ -45,13 +45,16 @@ mysqli_close($link);
 
 function printNote($line){
   for($i = 0; $i < count($line); $i++) {
-    $line[$i]['pos'] = strpos($line[$i]['content'], $line[$i]['contentString']);
-    $line[$i]['len'] = strlen($line[$i]['contentString']);
+    if($line[$i]['contentString']){
+      $line[$i]['pos'] = strpos($line[$i]['content'], (string)$line[$i]['contentString']);
+      $line[$i]['len'] = strlen($line[$i]['contentString']);  
+    }
   }
   $pos  = array_column($line, 'pos');
   $len  = array_column($line, 'len');
-
-  array_multisort($pos, SORT_ASC, $len, SORT_DESC, $line);
+  if($pos&&$len){
+    array_multisort($pos, SORT_ASC, $len, SORT_DESC, $line);
+  }
 //if there's no notes on the line, just print it
   printStudentMode($line, "student");
   printReaderMode($line, "reader");
@@ -81,7 +84,7 @@ function printNotes($line){
 function printStudentMode($line, $modeName){
   $printString = $line[0]['content'];
   foreach($line as $print){
-    if(strpos($printString, $print['contentString'])!== false) {
+    if($print['contentString']) {
       if($print['noteType']=="studentNote"){
         $replaceString = "<span id='note-".$print['noteId']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
         $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
@@ -93,7 +96,7 @@ function printStudentMode($line, $modeName){
 function printReaderMode($line, $modeName){
   $printString = $line[0]['content'];
   foreach($line as $print){
-    if(strpos($printString, $print['contentString'])!== false) {
+    if($print['contentString']) {
       if($print['noteType']=="readerGloss"){
         $replaceString = "<span id='note-".$print['noteId']."' aria-reader-gloss='".$print['noteContent']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
         $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));
@@ -105,7 +108,7 @@ function printReaderMode($line, $modeName){
 function printPerformerMode($line, $modeName){
   $printString = $line[0]['content'];
   foreach($line as $print){
-    if(strpos($printString, $print['contentString'])!== false) {
+    if($print['contentString']) {
       if($print['noteType']=="performerScansion"){
         $replaceString = "<span id='note-".$print['noteId']."' aria-scansion='".$print['scansionAlt']."' class='".$print['noteType']."'>".$print['contentString']."</span>";
         $printString = substr_replace($printString, $replaceString, strpos($printString, $print['contentString']), strlen($print['contentString']));

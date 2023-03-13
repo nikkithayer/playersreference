@@ -4,8 +4,8 @@ $playContents = "midsummer_play_contents";
 $playNotes = "midsummer_play_notes";
 $playName = "midsummer";
 ?>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>A Midsummer Night's Dream</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="../css/reset.css" rel="stylesheet">
